@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Con's - CS & Climate Change</title>
-  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="styles/cons.css" />
   <link rel="stylesheet" href="styles/global.css" />
 </head>
 <body>
@@ -12,7 +12,7 @@
   <header>
     <div class="container header-container">
       <div class="logo">
-        <a href="index.html">CS & Climate Change</a>
+        <a href="index.html">Tech & Climate Info</a>
       </div>
       <nav>
         <ul>
@@ -28,44 +28,89 @@
 
   <!-- Main Content -->
   <main>
-    <section id="cons" class="cons-section">
+    <!-- Con Overview Section -->
+    <section id="pros-overview" class="pros-overview-section">
+      <div class="overlay"></div>
       <div class="container">
-        <h1>Cons of Computer Science for Environmental Sustainability</h1>
-        <p>
-          While technological advancements present significant opportunities for sustainability,
-          several challenges and downsides must be addressed. Read on for a detailed exploration of these
-          potential issues.
-        </p>
-        <article>
-          <h2>1. High Energy Consumption of Data Centers</h2>
-          <p>
-            Data centers powering cloud computing and AI require enormous energy, frequently relying on
-            non-renewable sources. This contributes to increased carbon emissions if energy is not offset with
-            sustainable methods.
-          </p>
-        </article>
-        <article>
-          <h2>2. Electronic Waste Generation</h2>
-          <p>
-            Rapid technological advancements lead to frequent hardware upgrades, generating significant
-            amounts of electronic waste. Improper disposal of e-waste can have serious environmental impacts.
-          </p>
-        </article>
-        <article>
-          <h2>3. Resource Intensive Manufacturing Processes</h2>
-          <p>
-            The production of modern devices and infrastructures often requires the extraction of rare and
-            non-renewable resources, leading to environmental degradation and unsustainable resource consumption.
-          </p>
-        </article>
-        <article>
-          <h2>4. The Digital Divide and Uneven Benefits</h2>
-          <p>
-            Dependence on cutting-edge technologies can exacerbate social inequalities. Areas lacking access
-            to modern digital infrastructure may not enjoy the benefits of sustainability innovations, widening
-            the gap between communities.
-          </p>
-        </article>
+        <h1><span class="cons">Cons</span> of Computer Science for Environmental Sustainability</h1>
+        <p>While computer science has the potential to drive sustainable solutions, it also comes with significant challenges. From energy-intensive infrastructures to widening social divides, it's essential to critically assess these drawbacks.</p>
+      </div>
+    </section>
+
+    <!-- High Energy Consumption Section -->
+    <section class="renewable-blockchain-section">
+      <div class="container">
+        <h2>High Energy Consumption of Data Centers</h2>
+        <div class="renewable-blockchain-content">
+          <div class="renewable-image-container">
+            <img src="resources/Cons/Servers.png" alt="High Energy Consumption" />
+          </div>
+          <div class="renewable-text-container">
+            <p>Data centers powering cloud computing and AI require enormous energy, frequently relying on non-renewable sources. This contributes to increased carbon emissions if energy is not offset with sustainable methods.</p>
+            <p>It is difficult to find accurate data regarding energy consumption of generative AI due to companies not releasing it to the public. Some estimates suggest that an AI generation could consume 10 times more electricity than a Google search.</p>
+            <p>Google admitted that their energy consumption increased by 37% from 2022 to 2023—surpassing their ability to scale renewable energy efforts. If left unchecked, the environmental cost of AI could escalate rapidly.</p>
+            <div class="learn-more">
+              <a href="https://www.polytechnique-insights.com/en/columns/energy/generative-ai-energy-consumption-soars/#note-content-9" class="btn" target="_blank">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Electronic Waste Section -->
+    <section class="smart-cities-iot-section">
+      <div class="container">
+        <h2>Electronic Waste Generation</h2>
+        <div class="smart-iot-content">
+          <div class="smart-iot-text-container">
+            <p>Rapid technological advancements lead to frequent hardware upgrades, generating significant amounts of electronic waste. Improper disposal of e-waste can have serious environmental impacts.</p>
+            <p>In 2022, 62 million tonnes of e-waste was produced, but only 22.3% was documented as recycled. Toxic fumes, mercury poisoning, and resource over-extraction are all dangerous outcomes of poor e-waste handling.</p>
+            <div class="learn-more">
+              <a href="https://ewastemonitor.info/wp-content/uploads/2024/12/GEM_2024_EN_11_NOV-web.pdf" class="btn" target="_blank">Learn More</a>
+            </div>
+          </div>
+          <div class="smart-iot-image-container">
+            <img src="resources/Cons/EWaste.jpg" alt="Electronic Waste" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resource Intensive Manufacturing Section -->
+    <section class="data-driven-section">
+      <div class="container">
+        <h2>Resource Intensive Manufacturing</h2>
+        <div class="data-driven-content">
+          <div class="data-driven-image-container">
+            <img src="resources/Cons/Factory.jpg" alt="Resource Intensive Manufacturing" />
+          </div>
+          <div class="data-driven-text-container">
+            <p>The production of devices requires rare minerals and energy-intensive processes, which harm ecosystems. Toxins are released into air and water, while radioactive materials impact biodiversity.</p>
+            <p>To reduce harm, more sustainable materials and manufacturing practices must be adopted in the tech industry.</p>
+            <div class="learn-more">
+              <a href="https://storymaps.arcgis.com/stories/24b0c9cea1454c96bb65330b2cf4291f" class="btn" target="_blank">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Digital Divide Section -->
+    <section class="social-media-climate-section">
+      <div class="container">
+        <h2>The Digital Divide and Uneven Benefits</h2>
+        <div class="social-media-content">
+          <div class="social-media-text-container">
+            <p>Cutting-edge technologies can deepen inequality. Those without access to devices or reliable internet may fall behind in education, job opportunities, and access to services.</p>
+            <p>Planned obsolescence worsens this issue. As hardware requirements change rapidly, lower-income communities struggle to keep up, intensifying the digital divide.</p>
+            <div class="learn-more">
+              <a href="https://www.csps-efpc.gc.ca/tools/articles/digital-divide-eng.aspx" class="btn" target="_blank">Learn More</a>
+            </div>
+          </div>
+          <div class="social-media-image-container">
+            <img src="resources/Cons/DistanceLearning.jpg" alt="Digital Divide" />
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -73,7 +118,7 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; ENGL73170 - Project B</p>
+      <p>ENGL73170 - Project B</p>
     </div>
   </footer>
 

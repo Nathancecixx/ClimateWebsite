@@ -1,0 +1,182 @@
+:root {
+    --primary-color: #e74c3c;
+    --primary-hover: #c0392b;
+    --secondary-color: #ffffff;
+    --dark-color: #333;
+    --bg-light: #fef8f8;
+    --bg-alt: #fbeaea;
+    --bg-secondary: #f4e5e5;
+    --bg-lightblue: #f9f9ff;
+    --transition: 0.3s ease;
+    --font-family: 'Roboto', sans-serif;
+  }
+  
+  /* General Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    background: #fff;
+    color: var(--dark-color);
+  }
+
+  .cons {
+    color: #fff;
+    background: var(--primary-hover);
+    padding: 0 10px;
+    border-radius: 5px;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .pros-overview-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../resources/ProsBackground.jpg") no-repeat center/cover;
+    filter: blur(8px); /* Adjust the blur radius as needed */
+    z-index: -2;
+  }
+  
+  .pros-overview-section {
+    position: relative;
+    color: var(--secondary-color);
+    padding: 100px 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .pros-overview-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* optional dark overlay */
+    z-index: -1;
+  }  
+  
+  .pros-overview-section .container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+  }
+  
+  .pros-overview-section h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .pros-overview-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  /* Section Layouts */
+  section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    font-size: 2em;
+  }
+  
+  .renewable-blockchain-section,
+  .smart-cities-iot-section,
+  .data-driven-section,
+  .social-media-climate-section {
+    padding: 60px 0;
+  }
+  
+  .renewable-blockchain-section { background: var(--bg-light); }
+  .smart-cities-iot-section { background: var(--bg-alt); }
+  .data-driven-section { background: var(--bg-secondary); }
+  .social-media-climate-section { background: var(--bg-lightblue); }
+  
+  .renewable-blockchain-content,
+  .smart-iot-content,
+  .data-driven-content,
+  .social-media-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .renewable-image-container,
+  .smart-iot-image-container,
+  .data-driven-image-container,
+  .social-media-image-container {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .renewable-text-container,
+  .smart-iot-text-container,
+  .data-driven-text-container,
+  .social-media-text-container {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .renewable-text-container p,
+  .smart-iot-text-container p,
+  .data-driven-text-container p,
+  .social-media-text-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .btn {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background var(--transition);
+  }
+  
+  .btn:hover {
+    background: var(--primary-hover);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .renewable-blockchain-content,
+    .smart-iot-content,
+    .data-driven-content,
+    .social-media-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+    }
+  }
+  

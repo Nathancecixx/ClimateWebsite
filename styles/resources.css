@@ -8,10 +8,18 @@
   --font-family: 'Roboto', sans-serif;
 }
 
+.resources {
+  color: #fff;
+  background: var(--primary-hover);
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
 /* Main Resources Section */
 .resources-section {
+
+  background: linear-gradient(145deg, #f5fff7, #e6f9ec);
   padding: 80px 0;
-  background: var(--light-color);
   color: var(--dark-color);
   font-family: var(--font-family);
 }

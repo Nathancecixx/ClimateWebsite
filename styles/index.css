@@ -20,6 +20,10 @@ body {
   padding: 0 20px;
 }
 
+.highlight {
+  color: var(--primary-color);
+  font-weight: 600;
+}
 
 
 /* Hero Section */
@@ -79,8 +83,9 @@ body {
 
 /* About & Features Sections */
 .about, .features {
-  background: #fff;
-  padding: 25px 0;
+  background: linear-gradient(145deg, #f5fff7, #e6f9ec);
+  padding: 80px 0;
+  color: #222;
 }
 
 .about h2, .features h2 {
