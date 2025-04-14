@@ -1,0 +1,294 @@
+/* CSS Variables for Consistency */
+:root {
+    --primary-color: #2ecc71;
+    --primary-hover: #27ae60;
+    --secondary-color: #ffffff;
+    --dark-color: #333333;
+    --bg-light: #f8f8f8;
+    --bg-alt: #f2f2f2;
+    --bg-secondary: #eef7f4;
+    --bg-lightblue: #f0f8ff;
+    --transition: 0.3s ease;
+    --font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Global Styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--dark-color);
+    background: #fff;
+  }
+  
+  /* Container Utility */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header Styling */
+  header {
+    background: var(--secondary-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* Pros Overview Section */
+  .pros-overview-section {
+    position: relative;
+    color: var(--secondary-color);
+    padding: 100px 0;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .pros-overview-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../resources/ProsBackground.jpg") no-repeat center center/cover;
+    filter: blur(8px);
+    z-index: -2;
+  }
+  
+  .pros-overview-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+  }
+  
+  .pros-overview-section .container {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .pros-overview-section h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .pros-overview-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  /* Section Headings for Consistency */
+  section h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  
+  /* Button Styling */
+  .btn {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background var(--transition);
+  }
+  
+  .btn:hover {
+    background: var(--primary-hover);
+  }
+  
+  /* Learn More Button Container */
+  .learn-more {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  /* Renewable Energy & Blockchain Section */
+  .renewable-blockchain-section {
+    background: var(--bg-light);
+    padding: 60px 0;
+  }
+  
+  .renewable-blockchain-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .renewable-image-container {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .renewable-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  
+  .renewable-text-container {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .renewable-text-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  /* Smart Cities & IoT Integration Section */
+  .smart-cities-iot-section {
+    background: var(--bg-alt);
+    padding: 60px 0;
+  }
+  
+  .smart-iot-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .smart-iot-text-container {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .smart-iot-text-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .smart-iot-image-container {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .smart-iot-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  
+  /* Data-Driven Environmental Research Section */
+  .data-driven-section {
+    background: var(--bg-secondary);
+    padding: 60px 0;
+  }
+  
+  .data-driven-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .data-driven-text-container {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .data-driven-text-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .data-driven-image-container {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .data-driven-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  
+  /* Social Media for Climate Initiatives Section */
+  .social-media-climate-section {
+    background: var(--bg-lightblue);
+    padding: 60px 0;
+  }
+  
+  .social-media-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .social-media-text-container {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .social-media-text-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .social-media-image-container {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .social-media-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .renewable-blockchain-content,
+    .smart-iot-content,
+    .data-driven-content,
+    .social-media-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .learn-more {
+      text-align: center;
+    }
+  }
+   
+  

@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pro's - CS & Climate Change</title>
-  <link rel="stylesheet" href="styles/index.css" />
+  <!-- Added a modern Google Font for improved typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/pros.css" />
   <link rel="stylesheet" href="styles/global.css" />
 </head>
 <body>
@@ -26,54 +28,128 @@
     </div>
   </header>
 
-  <!-- Main Content -->
+  <!-- Main Content (padding-top added in CSS to clear fixed header) -->
   <main>
-    <section id="pros" class="pros-section">
+    <!-- Pros Overview Section -->
+    <section id="pros-overview" class="pros-overview-section">
+      <div class="overlay"></div>
       <div class="container">
         <h1>Pros of Computer Science for Environmental Sustainability</h1>
         <p>
-          Computer science drives numerous innovative solutions that boost sustainability and help
-          mitigate climate change. Explore the key benefits below.
+          Computer science drives numerous innovative solutions that boost sustainability and help mitigate climate change.
+          From optimizing renewable energy to enhancing resource efficiency, explore the key benefits below and discover how technology is shaping a greener future.
         </p>
-        <article>
-          <h2>1. Renewable Energy Optimization</h2>
-          <p>
-            Advanced algorithms and real-time data processing optimize renewable energy production
-            and grid distribution. Blockchain technology, for example, can facilitate secure and efficient
-            energy trading while reducing waste.
-          </p>
-        </article>
-        <article>
-          <h2>2. Smart Cities and IoT Integration</h2>
-          <p>
-            The integration of IoT in urban environments allows for smart energy management, better
-            traffic flow, and efficient public services. These innovations contribute to reduced carbon
-            emissions and more sustainable cities.
-          </p>
-        </article>
-        <article>
-          <h2>3. Data-Driven Environmental Research</h2>
-          <p>
-            Big data analytics and predictive models help researchers understand climate patterns and
-            forecast environmental changes. This data-driven approach supports proactive policy-making
-            and targeted sustainability initiatives.
-          </p>
-        </article>
-        <article>
-          <h2>4. Enhanced Resource Management</h2>
-          <p>
-            Technologies such as AI and machine learning improve resource allocation and process
-            optimization across industries, reducing overall energy consumption and environmental impact.
-          </p>
-        </article>
-        <article>
-          <h2>5. Increased Public Awareness and Engagement</h2>
-          <p>
-            Digital platforms and social media leverage computer science to share information and
-            engage communities, raising awareness about environmental issues and encouraging collective
-            action.
-          </p>
-        </article>
+      </div>
+    </section>
+
+    <!-- Renewable Energy & Blockchain Section -->
+    <section id="renewable-blockchain" class="renewable-blockchain-section">
+      <div class="container">
+        <h2>Renewable Energy Optimization Through Blockchain</h2>
+        <div class="renewable-blockchain-content">
+          <div class="renewable-image-container">
+            <img 
+              src="resources/RenewableEnergy.jpg" 
+              alt="Renewable Energy and Blockchain" />
+          </div>
+          <div class="renewable-text-container">
+            <p>
+              Blockchain technology is moving far beyond its cryptocurrency roots to revolutionize the energy market. By 2026, the global market for blockchain in the energy sector is predicted to exceed $1.5 billion—an enormous leap from $127.5 million in 2018.
+            </p>
+            <p>
+              In today’s energy landscape, blockchain is empowering a more decentralized model. This innovation enables the secure, transparent, and efficient trading of excess renewable energy—such as surplus solar power from residential panels—directly between producers and consumers, bypassing traditional middlemen. As a result, energy transactions become more cost-effective and environmentally friendly.
+            </p>
+            <p>
+              Moreover, even though blockchain is often linked with energy-intensive cryptocurrency mining, new approaches—like proof-of-stake—make blockchain applications in energy much more efficient. This means utilities and private companies can adopt blockchain to enhance grid management, reduce transaction fees, and inspire greater participation in green energy initiatives.
+            </p>
+            <p>
+              Explore how this technology is not only optimizing renewable energy production but also setting the stage for a more sustainable future.
+            </p>
+            <div class="learn-more">
+              <a href="https://www.forbes.com/sites/arielcohen/2024/12/06/the-blockchain-revolution-in-the-energy-market/" class="btn" target="_blank">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Smart Cities & IoT Integration Section -->
+    <section id="smart-cities-iot" class="smart-cities-iot-section">
+      <div class="container">
+        <h2>Smart Cities &amp; IoT Integration</h2>
+        <div class="smart-iot-content">
+          <div class="smart-iot-text-container">
+            <p>
+              Smart cities harness the power of IoT to transform urban spaces into efficient, sustainable environments. By utilizing interconnected sensors and devices, cities can monitor traffic, air quality, energy usage, and public safety in real time.
+            </p>
+            <p>
+              This real-time data is vital—it drives informed decision-making, optimizes resource allocation, and enables innovative services like smart parking systems, adaptive street lighting, and intelligent waste management. These solutions reduce congestion, improve environmental conditions, and enhance overall quality of life.
+            </p>
+            <p>
+              As global urbanization increases, the role of IoT in shaping smarter, more resilient cities is growing rapidly. These advancements not only streamline public services but also encourage citizen engagement and sustainable economic growth.
+            </p>
+            <div class="learn-more">
+              <a href="https://caburntelecom.com/role-iot-smart-cities/" class="btn" target="_blank">Learn More</a>
+            </div>
+          </div>
+          <div class="smart-iot-image-container">
+            <img src="resources/SmartCity.jpeg" 
+                alt="Smart Cities &amp; IoT Integration" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data-Driven Environmental Research Section -->
+    <section id="data-driven-research" class="data-driven-section">
+      <div class="container">
+        <h2>Data-Driven Environmental Research</h2>
+        <div class="data-driven-content">
+          <div class="data-driven-image-container">
+            <img src="resources/DataCenter.jpg" alt="AI and Environmental Research" />
+          </div>
+          <div class="data-driven-text-container">
+            <p>
+              In today’s era of big data, cutting-edge environmental research leverages advanced analytics and computer modeling to track climate patterns, analyze ecosystem trends, and predict changes. This data-driven approach empowers researchers to develop proactive strategies that inform sustainability and environmental policy.
+            </p>
+            <p>
+              By harnessing massive datasets from satellites, sensors, and field studies, scientists can detect subtle changes in temperature, precipitation, and vegetation. These insights play a crucial role in understanding both global climate phenomena and localized environmental challenges.
+            </p>
+            <p>
+              Innovative computational techniques enable faster processing of complex information, guiding effective conservation efforts, resource management, and climate change mitigation strategies.
+            </p>
+            <div class="learn-more">
+              <a href="https://www.climate.gov/" class="btn" target="_blank">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media for Climate Initiatives Section -->
+    <section id="social-media-climate" class="social-media-climate-section">
+      <div class="container">
+        <h2>The Power of Social Media for Spreading Awareness</h2>
+        <div class="social-media-content">
+          <div class="social-media-text-container">
+            <p>
+              Social media platforms are powerful catalysts for climate action. They connect communities, spread awareness, and mobilize digital activism on a global scale. Through impactful hashtags, viral campaigns, and real-time engagement, activists and organizations are driving change and informing policy discussions on climate justice.
+            </p>
+            <p>
+              For example, campaigns like #FridaysForFuture have unified millions of voices, amplifying calls for change and inspiring local and international action. These platforms allow for the rapid sharing of environmental data and success stories, encouraging collaborative solutions and holding leaders accountable.
+            </p>
+            <p>
+              By leveraging visual content, interactive storytelling, and data-driven insights, social media transforms abstract climate statistics into relatable, human-centered narratives that inspire action and promote sustainability.
+            </p>
+            <div class="learn-more">
+              <a href="https://ccaps.umn.edu/story/power-social-media-climate-justice-advocacy" class="btn" target="_blank">Learn More</a>
+            </div>
+          </div>
+          <div class="social-media-image-container">
+            <img src="resources/SocialMediaClimate.jpg" 
+                alt="Social Media and Climate Activism" />
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -81,7 +157,7 @@
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 CS & Climate Change. All rights reserved.</p>
+      <p>ENGL73170 - Project B</p>
     </div>
   </footer>
 

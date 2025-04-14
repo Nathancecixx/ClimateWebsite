@@ -1,139 +1,148 @@
-/* resources.css */
+/* Define CSS Variables */
+:root {
+  --primary-color: #2ecc71;
+  --primary-hover: #27ae60;
+  --dark-color: #333;
+  --light-color: #fff;
+  --transition: 0.3s ease;
+  --font-family: 'Roboto', sans-serif;
+}
 
 /* Main Resources Section */
 .resources-section {
-    padding: 60px 0;
-    background: #fff;
-  }
-  
-  .resources-section h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2.5em;
-    color: #2ecc71;
-  }
-  
-  .resources-section p {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 30px;
-  }
-  
-  /* Resource Tabs Navigation */
+  padding: 80px 0;
+  background: var(--light-color);
+  color: var(--dark-color);
+  font-family: var(--font-family);
+}
+
+.resources-section h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.8em;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.resources-section p {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+  color: var(--dark-color);
+}
+
+/* Resource Tabs Navigation */
+.resource-tabs ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.resource-tabs ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+  padding: 8px 16px;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  transition: background var(--transition), color var(--transition);
+}
+
+.resource-tabs ul li a:hover,
+.resource-tabs ul li a.active {
+  background: var(--primary-color);
+  color: var(--light-color);
+}
+
+/* Section Headings for Pro, Con, & Graphics */
+#pros-section, 
+#cons-section, 
+#graphics-section {
+  margin-top: 60px;
+}
+
+#pros-section h2,
+#cons-section h2,
+#graphics-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+  font-size: 2em;
+}
+
+/* List Styling for Pro & Con Links */
+#pros-section ul,
+#cons-section ul {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  max-width: 800px;
+}
+
+#pros-section ul li,
+#cons-section ul li {
+  margin: 12px 0;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+#pros-section ul li a,
+#cons-section ul li a {
+  text-decoration: none;
+  color: var(--dark-color);
+  transition: color var(--transition);
+}
+
+#pros-section ul li a:hover,
+#cons-section ul li a:hover {
+  color: var(--primary-color);
+}
+
+/* Graphics Grid Styling */
+.graphics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.graphics-grid figure {
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.graphics-grid figure:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.graphics-grid img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.graphics-grid figcaption {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: var(--dark-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .resource-tabs ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin-bottom: 30px;
+    flex-direction: column;
+    gap: 10px;
   }
-  
-  .resource-tabs ul li {
-    margin: 0 15px;
-  }
-  
-  .resource-tabs ul li a {
-    text-decoration: none;
-    color: #2ecc71;
-    font-weight: bold;
-    transition: color 0.3s;
-    padding: 5px 10px;
-    border-radius: 4px;
-  }
-  
-  .resource-tabs ul li a:hover,
-  .resource-tabs ul li a.active {
-    color: #fff;
-    background: #27ae60;
-  }
-  
-  /* Section Headings for Pro, Con, & Graphics */
-  #pros-section, 
-  #cons-section, 
-  #graphics-section {
-    margin-top: 40px;
-  }
-  
-  #pros-section h2,
-  #cons-section h2,
-  #graphics-section h2 {
-    text-align: center;
-    color: #2ecc71;
-    margin-bottom: 20px;
-  }
-  
-  /* List Styling for Pro & Con Links */
-  #pros-section ul,
-  #cons-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  #pros-section ul li,
-  #cons-section ul li {
-    margin: 10px 0;
-    text-align: center;
-    font-size: 1.1em;
-  }
-  
-  #pros-section ul li a,
-  #cons-section ul li a {
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s;
-  }
-  
-  #pros-section ul li a:hover,
-  #cons-section ul li a:hover {
-    color: #2ecc71;
-  }
-  
-  /* Graphics Grid Styling */
-  .graphics-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-  }
-  
-  .graphics-grid figure {
-    background: #f9f9f9;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .graphics-grid figure:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .graphics-grid img {
-    max-width: 150px;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .graphics-grid figcaption {
-    margin-top: 10px;
-    font-size: 0.9em;
-    color: #333;
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .resource-tabs ul {
-      flex-direction: column;
-      gap: 10px;
-    }
-    
-    .resource-tabs ul li {
-      margin: 0;
-    }
-  }
-  
+}
