@@ -75,12 +75,18 @@
 }
 
 #pros-section h2,
-#cons-section h2,
 #graphics-section h2 {
   text-align: center;
   margin-bottom: 30px;
   color: var(--primary-color);
   font-size: 2em;
+}
+
+#cons-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #e74c3c;
+  font-size: 2em;  
 }
 
 /* List Styling for Pro & Con Links */
@@ -106,9 +112,12 @@
   transition: color var(--transition);
 }
 
-#pros-section ul li a:hover,
-#cons-section ul li a:hover {
+#pros-section ul li a:hover {
   color: var(--primary-color);
+}
+
+#cons-section ul li a:hover {
+  color: #e74c3c;
 }
 
 /* Graphics Grid Styling */
