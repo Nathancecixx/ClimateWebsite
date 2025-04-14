@@ -147,6 +147,38 @@
   color: var(--dark-color);
 }
 
+
+/* Reference Styling */
+.ref-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ref-list li {
+  margin-bottom: 25px;
+}
+
+.ref-list a {
+  font-weight: bold;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.ref-list a:hover {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+.ieee-ref {
+  font-size: 0.95em;
+  color: #777;
+  margin-top: 8px;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .resource-tabs ul {
